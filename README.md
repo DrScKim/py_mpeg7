@@ -1,6 +1,7 @@
 # py_mpeg7
 ----------------------------------------------------------------------------------------
 
+###
 this is wrapping function Library to use mpeg7 feature in python and calculate its distance
 
 the library is adpated from the MPEG-7 XM Reference Software available at 
@@ -10,12 +11,12 @@ http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html
 
 ----------------------------------------------------------------------------------------
 
-1. Setting
+###1. Setting
 
 	Additional include directory : {OPENCV_INCLUDE_PATH};{BOOST_LIBRARY_INCLUDE_PATH};{PYTHON27_INCLUDE_PATH}
 	Additional library directory : {OPENCV_LIB_PATH};{BOOST_LIB_INCLUDE_PATH};{PYTHON27_LIB_PATH}
 
-2. description
+###2. description
 	Currently Supported Features
 
 	+ Color Structure Descriptor (CSD)
@@ -35,7 +36,7 @@ http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html
 	and return json type of feature as below
 
 	CLD(Color Layout Descriptor) Example
-	
+```	
 	{
 		"descriptor": {
 			"feature_name": "MPEG7_Color Layout Descriptor",
@@ -48,6 +49,7 @@ http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html
 			}]
 		}
 	}
+```
 
 	DCD(Dominant Color Descripto) Example
 	features 
@@ -55,6 +57,7 @@ http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html
 	second one is R,G,Bs values of each DC
 	last one it's R,G,Bs variance of each DC
 	
+```	
 	{
 		"descriptor": {
 			"feature_name": "MPEG7_Dominant Color Descriptor",
@@ -67,14 +70,15 @@ http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html
 			}]
 		}
 	}
-	
-3. Dependencies
+```
+
+###3. Dependencies
 
 	+ boost 1.61 : http://www.boost.org/users/history/version_1_61_0.html
 	+ python 2.7 : https://www.python.org/download/releases/2.7/
 	+ opencv 2.4.10 : http://opencv.org/downloads.html
 	
-4. How to use
+###4. How to use
 	
 	after release copy of file "cv_mpeg7.pyd" located on $(SolutionDir)$(Configuration)\
 	and paste your python project folder and import {your_app.cv_mpeg7}
@@ -109,6 +113,15 @@ http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html
 	+ Scalable Color Descriptor (SCD)
 	+ Face Recognition Descriptor (FRD)
 	+ GoF/GoP Color Descriptor (GoF/GoP)
+
+----------------------------------------------------------------------------------------
+
+##Author
+
+* Sangchul Kim
+* Computer Science Department, Sogang University
+* email : smaslayer1@gmail.com
+* hompy : http://mmlab.sogang.ac.kr
 
 ----------------------------------------------------------------------------------------
 
