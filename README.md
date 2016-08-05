@@ -1,7 +1,7 @@
 # py_mpeg7
 ----------------------------------------------------------------------------------------
 
-###
+## Introduction
 this is wrapping function Library to use mpeg7 feature in python and calculate its distance
 
 the library is adpated from the MPEG-7 XM Reference Software available at 
@@ -12,11 +12,19 @@ http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html
 ----------------------------------------------------------------------------------------
 
 ###1. Setting
-
+	
+	adjust project's properties
+	
 	Additional include directory : {OPENCV_INCLUDE_PATH};{BOOST_LIBRARY_INCLUDE_PATH};{PYTHON27_INCLUDE_PATH}
 	Additional library directory : {OPENCV_LIB_PATH};{BOOST_LIB_INCLUDE_PATH};{PYTHON27_LIB_PATH}
+###2. Dependencies
 
-###2. description
+	+ boost 1.61 : http://www.boost.org/users/history/version_1_61_0.html
+	+ python 2.7 : https://www.python.org/download/releases/2.7/
+	+ opencv 2.4.10 : http://opencv.org/downloads.html
+	+ 
+
+###3. description
 	Currently Supported Features
 
 	+ Color Structure Descriptor (CSD)
@@ -72,11 +80,7 @@ http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html
 	}
 ```
 
-###3. Dependencies
 
-	+ boost 1.61 : http://www.boost.org/users/history/version_1_61_0.html
-	+ python 2.7 : https://www.python.org/download/releases/2.7/
-	+ opencv 2.4.10 : http://opencv.org/downloads.html
 	
 ###4. How to use
 	
