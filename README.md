@@ -1,7 +1,7 @@
 # py_mpeg7
 ----------------------------------------------------------------------------------------
 
-this is wrapping function to use mpeg7 feature in python and calculate its distance
+this is wrapping function Library to use mpeg7 feature in python and calculate its distance
 
 the library is adpated from the MPEG-7 XM Reference Software available at 
 http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html
