@@ -125,7 +125,7 @@ according to W. Surong, C. Liang-Tien, D. Rajan, "Efficient image retrieval usin
 ##Author
 
 * Sangchul Kim
-* Computer Science Department, Sogang University
+* Ph.D Candidate @ Computer Science Department, Sogang University
 * email : smaslayer1@gmail.com
 * hompy : http://mmlab.sogang.ac.kr
 
