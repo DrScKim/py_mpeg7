@@ -6,35 +6,8 @@ this is wrapping function to use mpeg7 feature in python and calculate its dista
 the library is adpated from the MPEG-7 XM Reference Software available at 
 http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html
 
-As also available in the header files adapted from the XM software, please note that:
-"ISO/IEC gives users of MPEG-7 free license to this software module or
-modifications thereof for use in hardware or software products claiming
-conformance to MPEG-7".
 
-The XM reference software contains some bugs and does not work properly.
-Moreover, it is not meant to be used in applications directly, therefore, 
-there is no decent interface to use it easily, not mentioning the horrible coding, 
-which makes everybody run away at the first glance!
-This library is an attempt to make the MPEG-7 feature extraction easier to integrate into new systems..
 
-----------------------------------------------------------------------------------------
-
-Supported descriptors in this library :
-
-+ Color Structure Descriptor (CSD)
-+ Scalable Color Descriptor (SCD)
-+ GoF/GoP Color Descriptor (GoF/GoP)
-+ Color Layout Descriptor (CLD)
-+ Dominant Color Descriptor (DCD)
-+ Homogeneous Texture Descriptor (HTD)
-+ Edge Histogram Descriptor (EHD)
-+ Face Recognition Descriptor (FRD)
-
-Please see http://www.chiariglione.org/mpeg/standards/mpeg-7/mpeg-7.htm for a brief description of each.
-For more details: 
-B. S. Manjunath, P. Salembier, and T. Sikora, Eds., Introduction to MPEG-7: Multimedia Content Description Interface. England: WILEY, 2002.
-
------------------------------------------------------------------------------------------
 
 
 1. Setting
@@ -43,7 +16,15 @@ B. S. Manjunath, P. Salembier, and T. Sikora, Eds., Introduction to MPEG-7: Mult
 	Additional library directory : {OPENCV_LIB_PATH};{BOOST_LIB_INCLUDE_PATH};{PYTHON27_LIB_PATH}
 
 2. description
+	Currently Supported Features
+
+	+ Color Structure Descriptor (CSD)
+	+ Color Layout Descriptor (CLD)
+	+ Dominant Color Descriptor (DCD)
+	+ Homogeneous Texture Descriptor (HTD)
+	+ Edge Histogram Descriptor (EHD)
 	
+
 	MPEG7 features which is except for Dominant Color Descriptor calculate distance as its standard measure
 	Dominant Color Descriptors distance measure is tunned by me
 	the measure is Earth Mover's Distance
@@ -125,3 +106,35 @@ opencv 2.4.10 : http://opencv.org/downloads.html
 	+ Scalable Color Descriptor (SCD)
 	+ Face Recognition Descriptor (FRD)
 	+ GoF/GoP Color Descriptor (GoF/GoP)
+
+----------------------------------------------------------------------------------------
+
+As also available in the header files adapted from the XM software, please note that:
+"ISO/IEC gives users of MPEG-7 free license to this software module or
+modifications thereof for use in hardware or software products claiming
+conformance to MPEG-7".
+
+The XM reference software contains some bugs and does not work properly.
+Moreover, it is not meant to be used in applications directly, therefore, 
+there is no decent interface to use it easily, not mentioning the horrible coding, 
+which makes everybody run away at the first glance!
+This library is an attempt to make the MPEG-7 feature extraction easier to integrate into new systems..
+
+----------------------------------------------------------------------------------------
+
+Supported descriptors in this library :
+
++ Color Structure Descriptor (CSD)
++ Scalable Color Descriptor (SCD)
++ GoF/GoP Color Descriptor (GoF/GoP)
++ Color Layout Descriptor (CLD)
++ Dominant Color Descriptor (DCD)
++ Homogeneous Texture Descriptor (HTD)
++ Edge Histogram Descriptor (EHD)
++ Face Recognition Descriptor (FRD)
+
+Please see http://www.chiariglione.org/mpeg/standards/mpeg-7/mpeg-7.htm for a brief description of each.
+For more details: 
+B. S. Manjunath, P. Salembier, and T. Sikora, Eds., Introduction to MPEG-7: Multimedia Content Description Interface. England: WILEY, 2002.
+
+-----------------------------------------------------------------------------------------
