@@ -14,7 +14,7 @@ http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html
 
 	Additional include directory : {OPENCV_INCLUDE_PATH};{BOOST_LIBRARY_INCLUDE_PATH};{PYTHON27_INCLUDE_PATH}
 	Additional library directory : {OPENCV_LIB_PATH};{BOOST_LIB_INCLUDE_PATH};{PYTHON27_LIB_PATH}
-----------------------------------------------------------------------------------------
+
 2. description
 	Currently Supported Features
 
@@ -54,6 +54,7 @@ http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html
 	first one is DC, DCD has 1~8 DC(Dominant Color)  
 	second one is R,G,Bs values of each DC
 	last one it's R,G,Bs variance of each DC
+	
 	{
 		"descriptor": {
 			"feature_name": "MPEG7_Dominant Color Descriptor",
@@ -66,13 +67,13 @@ http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html
 			}]
 		}
 	}
-----------------------------------------------------------------------------------------
+	
 3. Dependencies
 
 	+ boost 1.61 : http://www.boost.org/users/history/version_1_61_0.html
 	+ python 2.7 : https://www.python.org/download/releases/2.7/
 	+ opencv 2.4.10 : http://opencv.org/downloads.html
-----------------------------------------------------------------------------------------
+	
 4. How to use
 	
 	after release copy of file "cv_mpeg7.pyd" located on $(SolutionDir)$(Configuration)\
