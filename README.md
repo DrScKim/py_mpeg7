@@ -7,7 +7,9 @@ this is wrapping function Library to use mpeg7 feature in python and calculate i
 the library is adpated from the MPEG-7 XM Reference Software available at 
 http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html
 
-
+distance measure of DCD is replaced by Earth Mover's Distance
+because it's similarity measure is more accurate than MPEG7 Spec's
+according to W. Surong, C. Liang-Tien, D. Rajan, "Efficient image retrieval using MPEG-7 descriptors," Proceedings of Int'l Conference of Image Processing 2003, vol.2 no.3, pp.509-512, 2003
 
 ----------------------------------------------------------------------------------------
 
