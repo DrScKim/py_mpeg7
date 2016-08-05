@@ -35,6 +35,7 @@ http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html
 	and return json type of feature as below
 
 	CLD(Color Layout Descriptor) Example
+	
 	{
 		"descriptor": {
 			"feature_name": "MPEG7_Color Layout Descriptor",
