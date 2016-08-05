@@ -68,9 +68,9 @@ http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html
 	}
 3. Dependencies
 
-boost 1.61 : http://www.boost.org/users/history/version_1_61_0.html
-python 2.7 : https://www.python.org/download/releases/2.7/
-opencv 2.4.10 : http://opencv.org/downloads.html
+	boost 1.61 : http://www.boost.org/users/history/version_1_61_0.html
+	python 2.7 : https://www.python.org/download/releases/2.7/
+	opencv 2.4.10 : http://opencv.org/downloads.html
 
 4. How to use
 	
