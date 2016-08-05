@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E71C35E4-6FA7-4AE7-A1DF-4923B14681C1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>boostpythontest</RootNamespace>
+    <ProjectName>py_mpeg7</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetExt>.pyd</TargetExt>
+    <TargetName>cv_mpeg7</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetExt>.pyd</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;BOOSTPYTHONTEST_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Python27\include;C:\boost\include\boost-1_53;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\boost\lib32;C:\Python27\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>boost_python-vc110-mt-gd-1_53.lib;C:\Python27\libs\python27.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;BOOSTPYTHONTEST_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Python27\include;C:\boost\include\boost-1_53;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\boost\lib32;C:\Python27\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>boost_python-vc110-mt-gd-1_53.lib;C:\Python27\libs\python27.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;BOOSTPYTHONTEST_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\library\opencv\build\include;C:\Python27\include;C:\boost161\include\boost-1_61;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>D:\library\opencv\build\x86\vc10\lib;C:\boost161\lib;C:\Python27_32bit\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>boost_python-vc100-mt-gd-1_61.lib;python27.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;BOOSTPYTHONTEST_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\library\opencv\build\include;C:\Python27\include;C:\boost161\include\boost-1_61;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>D:\library\opencv\build\x64\vc10\lib;C:\boost161\lib;C:\Python27\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>boost_python-vc100-mt-gd-1_61.lib;python27.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="MPEG7_CV\AddressLib\README" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="abstract_Extract.h" />
+    <ClInclude Include="base_Extract.h" />
+    <ClInclude Include="Color_Extract.h" />
+    <ClInclude Include="ColoSpaceConverter.h" />
+    <ClInclude Include="emd.h" />
+    <ClInclude Include="ExtractHeader.h" />
+    <ClInclude Include="feature_schema.h" />
+    <ClInclude Include="FileHandler.h" />
+    <ClInclude Include="indexer.h" />
+    <ClInclude Include="mixed_extract.h" />
+    <ClInclude Include="MPEG7_CV\AddressLib\address.h" />
+    <ClInclude Include="MPEG7_CV\AddressLib\inter.h" />
+    <ClInclude Include="MPEG7_CV\AddressLib\intra.h" />
+    <ClInclude Include="MPEG7_CV\AddressLib\momusys.h" />
+    <ClInclude Include="MPEG7_CV\AddressLib\nhood.h" />
+    <ClInclude Include="MPEG7_CV\AddressLib\vopio.h" />
+    <ClInclude Include="MPEG7_CV\Convert.h" />
+    <ClInclude Include="MPEG7_CV\Descriptors.h" />
+    <ClInclude Include="MPEG7_CV\Descriptors\ColorLayout.h" />
+    <ClInclude Include="MPEG7_CV\Descriptors\ColorQuant.h" />
+    <ClInclude Include="MPEG7_CV\Descriptors\ColorSpace.h" />
+    <ClInclude Include="MPEG7_CV\Descriptors\ColorStructure.h" />
+    <ClInclude Include="MPEG7_CV\Descriptors\ContourShape.h" />
+    <ClInclude Include="MPEG7_CV\Descriptors\DominantColor.h" />
+    <ClInclude Include="MPEG7_CV\Descriptors\EdgeHist.h" />
+    <ClInclude Include="MPEG7_CV\Descriptors\FaceRecognition.h" />
+    <ClInclude Include="MPEG7_CV\Descriptors\HomoTexture.h" />
+    <ClInclude Include="MPEG7_CV\Descriptors\RegionShape.h" />
+    <ClInclude Include="MPEG7_CV\Descriptors\ScalableColor.h" />
+    <ClInclude Include="MPEG7_CV\Extraction\ColorLayoutExtraction.h" />
+    <ClInclude Include="MPEG7_CV\Extraction\ColorSpaceExtraction.h" />
+    <ClInclude Include="MPEG7_CV\Extraction\ColorStructureExtraction.h" />
+    <ClInclude Include="MPEG7_CV\Extraction\ContourShapeExtraction.h" />
+    <ClInclude Include="MPEG7_CV\Extraction\DominantColorExtraction.h" />
+    <ClInclude Include="MPEG7_CV\Extraction\EdgeHistExtraction.h" />
+    <ClInclude Include="MPEG7_CV\Extraction\EigenFaceData.h" />
+    <ClInclude Include="MPEG7_CV\Extraction\FaceRecognitionExtraction.h" />
+    <ClInclude Include="MPEG7_CV\Extraction\GoFGoPColorExtraction.h" />
+    <ClInclude Include="MPEG7_CV\Extraction\HomoTextureExtraction.h" />
+    <ClInclude Include="MPEG7_CV\Extraction\homo_texture_extractor.h" />
+    <ClInclude Include="MPEG7_CV\Extraction\imgutil.h" />
+    <ClInclude Include="MPEG7_CV\Extraction\RegionShapeExtraction.h" />
+    <ClInclude Include="MPEG7_CV\Extraction\ScalableColorExtraction.h" />
+    <ClInclude Include="MPEG7_CV\Feature.h" />
+    <ClInclude Include="MPEG7_CV\Frame.h" />
+    <ClInclude Include="MPEG7_Extract.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="useOpenCV2410.h" />
+    <ClInclude Include="util.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cv_mpeg7.cpp" />
+    <ClCompile Include="dllmain.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="emd.cpp" />
+    <ClCompile Include="MPEG7_CV\AddressLib\address.c" />
+    <ClCompile Include="MPEG7_CV\AddressLib\inter.c" />
+    <ClCompile Include="MPEG7_CV\AddressLib\intra.c" />
+    <ClCompile Include="MPEG7_CV\AddressLib\nhood.c" />
+    <ClCompile Include="MPEG7_CV\AddressLib\vopio.c" />
+    <ClCompile Include="MPEG7_CV\Convert.cpp" />
+    <ClCompile Include="MPEG7_CV\Descriptors\ColorLayout.cpp" />
+    <ClCompile Include="MPEG7_CV\Descriptors\ColorQuant.cpp" />
+    <ClCompile Include="MPEG7_CV\Descriptors\ColorSpace.cpp" />
+    <ClCompile Include="MPEG7_CV\Descriptors\ColorStructure.cpp" />
+    <ClCompile Include="MPEG7_CV\Descriptors\ContourShape.cpp" />
+    <ClCompile Include="MPEG7_CV\Descriptors\DominantColor.cpp" />
+    <ClCompile Include="MPEG7_CV\Descriptors\EdgeHist.cpp" />
+    <ClCompile Include="MPEG7_CV\Descriptors\FaceRecognition.cpp" />
+    <ClCompile Include="MPEG7_CV\Descriptors\HomoTexture.cpp" />
+    <ClCompile Include="MPEG7_CV\Descriptors\RegionShape.cpp" />
+    <ClCompile Include="MPEG7_CV\Descriptors\ScalableColor.cpp" />
+    <ClCompile Include="MPEG7_CV\Extraction\ColorLayoutExtraction.cpp" />
+    <ClCompile Include="MPEG7_CV\Extraction\ColorSpaceExtraction.cpp" />
+    <ClCompile Include="MPEG7_CV\Extraction\ColorStructureExtraction.cpp" />
+    <ClCompile Include="MPEG7_CV\Extraction\ContourShapeExtraction.cpp" />
+    <ClCompile Include="MPEG7_CV\Extraction\DominantColorExtraction.cpp" />
+    <ClCompile Include="MPEG7_CV\Extraction\EdgeHistExtraction.cpp" />
+    <ClCompile Include="MPEG7_CV\Extraction\FaceRecognitionExtraction.cpp" />
+    <ClCompile Include="MPEG7_CV\Extraction\GoFGoPColorExtraction.cpp" />
+    <ClCompile Include="MPEG7_CV\Extraction\HomoTextureExtraction.cpp" />
+    <ClCompile Include="MPEG7_CV\Extraction\homo_texture_extractor.cpp" />
+    <ClCompile Include="MPEG7_CV\Extraction\imgutil.c" />
+    <ClCompile Include="MPEG7_CV\Extraction\RegionShapeExtraction.cpp" />
+    <ClCompile Include="MPEG7_CV\Extraction\ScalableColorExtraction.cpp" />
+    <ClCompile Include="MPEG7_CV\Feature.cpp" />
+    <ClCompile Include="MPEG7_CV\Frame.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

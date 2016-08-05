@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="MPEG7">
+      <UniqueIdentifier>{3364495f-f7e5-4b11-8afc-d5d138b20cd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MPEG7\AddressLib">
+      <UniqueIdentifier>{2cefefb0-8ac4-49e3-a6d1-4b3c61804a2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MPEG7\Descriptors">
+      <UniqueIdentifier>{c8f3c894-9463-444e-b469-cda327b98a30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MPEG7\Extraction">
+      <UniqueIdentifier>{f3d8a291-562d-4acc-8eac-0b8de1ac8912}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="MPEG7_CV\AddressLib\README">
+      <Filter>MPEG7\AddressLib</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="abstract_Extract.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base_Extract.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Color_Extract.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ColoSpaceConverter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="emd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExtractHeader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="feature_schema.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="indexer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mixed_extract.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MPEG7_Extract.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="useOpenCV2410.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MPEG7_CV\Convert.h">
+      <Filter>MPEG7</Filter>
+    </ClInclude>
+    <ClInclude Include="MPEG7_CV\Descriptors.h">
+      <Filter>MPEG7</Filter>
+    </ClInclude>
+    <ClInclude Include="MPEG7_CV\Feature.h">
+      <Filter>MPEG7</Filter>
+    </ClInclude>
+    <ClInclude Include="MPEG7_CV\Frame.h">
+      <Filter>MPEG7</Filter>
+    </ClInclude>
+    <ClInclude Include="MPEG7_CV\AddressLib\address.h">
+      <Filter>MPEG7\AddressLib</Filter>
+    </ClInclude>
+    <ClInclude Include="MPEG7_CV\AddressLib\inter.h">
+      <Filter>MPEG7\AddressLib</Filter>
+    </ClInclude>
+    <ClInclude Include="MPEG7_CV\AddressLib\intra.h">
+      <Filter>MPEG7\AddressLib</Filter>
+    </ClInclude>
+    <ClInclude Include="MPEG7_CV\AddressLib\momusys.h">
+      <Filter>MPEG7\AddressLib</Filter>
+    </ClInclude>
+    <ClInclude Include="MPEG7_CV\AddressLib\nhood.h">
+      <Filter>MPEG7\AddressLib</Filter>
+    </ClInclude>
+    <ClInclude Include="MPEG7_CV\AddressLib\vopio.h">
+      <Filter>MPEG7\AddressLib</Filter>
+    </ClInclude>
+    <ClInclude Include="MPEG7_CV\Descriptors\ColorLayout.h">
+      <Filter>MPEG7\Descriptors</Filter>
+    </ClInclude>
+    <ClInclude Include="MPEG7_CV\Descriptors\ColorQuant.h">
+      <Filter>MPEG7\Descriptors</Filter>
+    </ClInclude>
+    <ClInclude Include="MPEG7_CV\Descriptors\ColorSpace.h">
+      <Filter>MPEG7\Descriptors</Filter>
+    </ClInclude>
+    <ClInclude Include="MPEG7_CV\Descriptors\ColorStructure.h">
+      <Filter>MPEG7\Descriptors</Filter>
+    </ClInclude>
+    <ClInclude Include="MPEG7_CV\Descriptors\ContourShape.h">
+      <Filter>MPEG7\Descriptors</Filter>
+    </ClInclude>
+    <ClInclude Include="MPEG7_CV\Descriptors\DominantColor.h">
+      <Filter>MPEG7\Descriptors</Filter>
+    </ClInclude>
+    <ClInclude Include="MPEG7_CV\Descriptors\EdgeHist.h">
+      <Filter>MPEG7\Descriptors</Filter>
+    </ClInclude>
+    <ClInclude Include="MPEG7_CV\Descriptors\FaceRecognition.h">
+      <Filter>MPEG7\Descriptors</Filter>
+    </ClInclude>
+    <ClInclude Include="MPEG7_CV\Descriptors\HomoTexture.h">
+      <Filter>MPEG7\Descriptors</Filter>
+    </ClInclude>
+    <ClInclude Include="MPEG7_CV\Descriptors\RegionShape.h">
+      <Filter>MPEG7\Descriptors</Filter>
+    </ClInclude>
+    <ClInclude Include="MPEG7_CV\Descriptors\ScalableColor.h">
+      <Filter>MPEG7\Descriptors</Filter>
+    </ClInclude>
+    <ClInclude Include="MPEG7_CV\Extraction\ColorLayoutExtraction.h">
+      <Filter>MPEG7\Extraction</Filter>
+    </ClInclude>
+    <ClInclude Include="MPEG7_CV\Extraction\ColorSpaceExtraction.h">
+      <Filter>MPEG7\Extraction</Filter>
+    </ClInclude>
+    <ClInclude Include="MPEG7_CV\Extraction\ColorStructureExtraction.h">
+      <Filter>MPEG7\Extraction</Filter>
+    </ClInclude>
+    <ClInclude Include="MPEG7_CV\Extraction\ContourShapeExtraction.h">
+      <Filter>MPEG7\Extraction</Filter>
+    </ClInclude>
+    <ClInclude Include="MPEG7_CV\Extraction\DominantColorExtraction.h">
+      <Filter>MPEG7\Extraction</Filter>
+    </ClInclude>
+    <ClInclude Include="MPEG7_CV\Extraction\EdgeHistExtraction.h">
+      <Filter>MPEG7\Extraction</Filter>
+    </ClInclude>
+    <ClInclude Include="MPEG7_CV\Extraction\EigenFaceData.h">
+      <Filter>MPEG7\Extraction</Filter>
+    </ClInclude>
+    <ClInclude Include="MPEG7_CV\Extraction\FaceRecognitionExtraction.h">
+      <Filter>MPEG7\Extraction</Filter>
+    </ClInclude>
+    <ClInclude Include="MPEG7_CV\Extraction\GoFGoPColorExtraction.h">
+      <Filter>MPEG7\Extraction</Filter>
+    </ClInclude>
+    <ClInclude Include="MPEG7_CV\Extraction\homo_texture_extractor.h">
+      <Filter>MPEG7\Extraction</Filter>
+    </ClInclude>
+    <ClInclude Include="MPEG7_CV\Extraction\HomoTextureExtraction.h">
+      <Filter>MPEG7\Extraction</Filter>
+    </ClInclude>
+    <ClInclude Include="MPEG7_CV\Extraction\imgutil.h">
+      <Filter>MPEG7\Extraction</Filter>
+    </ClInclude>
+    <ClInclude Include="MPEG7_CV\Extraction\RegionShapeExtraction.h">
+      <Filter>MPEG7\Extraction</Filter>
+    </ClInclude>
+    <ClInclude Include="MPEG7_CV\Extraction\ScalableColorExtraction.h">
+      <Filter>MPEG7\Extraction</Filter>
+    </ClInclude>
+    <ClInclude Include="util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MPEG7_CV\Convert.cpp">
+      <Filter>MPEG7</Filter>
+    </ClCompile>
+    <ClCompile Include="MPEG7_CV\Feature.cpp">
+      <Filter>MPEG7</Filter>
+    </ClCompile>
+    <ClCompile Include="MPEG7_CV\Frame.cpp">
+      <Filter>MPEG7</Filter>
+    </ClCompile>
+    <ClCompile Include="MPEG7_CV\AddressLib\address.c">
+      <Filter>MPEG7\AddressLib</Filter>
+    </ClCompile>
+    <ClCompile Include="MPEG7_CV\AddressLib\inter.c">
+      <Filter>MPEG7\AddressLib</Filter>
+    </ClCompile>
+    <ClCompile Include="MPEG7_CV\AddressLib\intra.c">
+      <Filter>MPEG7\AddressLib</Filter>
+    </ClCompile>
+    <ClCompile Include="MPEG7_CV\AddressLib\nhood.c">
+      <Filter>MPEG7\AddressLib</Filter>
+    </ClCompile>
+    <ClCompile Include="MPEG7_CV\AddressLib\vopio.c">
+      <Filter>MPEG7\AddressLib</Filter>
+    </ClCompile>
+    <ClCompile Include="MPEG7_CV\Descriptors\ColorLayout.cpp">
+      <Filter>MPEG7\Descriptors</Filter>
+    </ClCompile>
+    <ClCompile Include="MPEG7_CV\Descriptors\ColorQuant.cpp">
+      <Filter>MPEG7\Descriptors</Filter>
+    </ClCompile>
+    <ClCompile Include="MPEG7_CV\Descriptors\ColorSpace.cpp">
+      <Filter>MPEG7\Descriptors</Filter>
+    </ClCompile>
+    <ClCompile Include="MPEG7_CV\Descriptors\ColorStructure.cpp">
+      <Filter>MPEG7\Descriptors</Filter>
+    </ClCompile>
+    <ClCompile Include="MPEG7_CV\Descriptors\ContourShape.cpp">
+      <Filter>MPEG7\Descriptors</Filter>
+    </ClCompile>
+    <ClCompile Include="MPEG7_CV\Descriptors\DominantColor.cpp">
+      <Filter>MPEG7\Descriptors</Filter>
+    </ClCompile>
+    <ClCompile Include="MPEG7_CV\Descriptors\EdgeHist.cpp">
+      <Filter>MPEG7\Descriptors</Filter>
+    </ClCompile>
+    <ClCompile Include="MPEG7_CV\Descriptors\FaceRecognition.cpp">
+      <Filter>MPEG7\Descriptors</Filter>
+    </ClCompile>
+    <ClCompile Include="MPEG7_CV\Descriptors\HomoTexture.cpp">
+      <Filter>MPEG7\Descriptors</Filter>
+    </ClCompile>
+    <ClCompile Include="MPEG7_CV\Descriptors\RegionShape.cpp">
+      <Filter>MPEG7\Descriptors</Filter>
+    </ClCompile>
+    <ClCompile Include="MPEG7_CV\Descriptors\ScalableColor.cpp">
+      <Filter>MPEG7\Descriptors</Filter>
+    </ClCompile>
+    <ClCompile Include="MPEG7_CV\Extraction\ColorLayoutExtraction.cpp">
+      <Filter>MPEG7\Extraction</Filter>
+    </ClCompile>
+    <ClCompile Include="MPEG7_CV\Extraction\ColorSpaceExtraction.cpp">
+      <Filter>MPEG7\Extraction</Filter>
+    </ClCompile>
+    <ClCompile Include="MPEG7_CV\Extraction\ColorStructureExtraction.cpp">
+      <Filter>MPEG7\Extraction</Filter>
+    </ClCompile>
+    <ClCompile Include="MPEG7_CV\Extraction\ContourShapeExtraction.cpp">
+      <Filter>MPEG7\Extraction</Filter>
+    </ClCompile>
+    <ClCompile Include="MPEG7_CV\Extraction\DominantColorExtraction.cpp">
+      <Filter>MPEG7\Extraction</Filter>
+    </ClCompile>
+    <ClCompile Include="MPEG7_CV\Extraction\EdgeHistExtraction.cpp">
+      <Filter>MPEG7\Extraction</Filter>
+    </ClCompile>
+    <ClCompile Include="MPEG7_CV\Extraction\FaceRecognitionExtraction.cpp">
+      <Filter>MPEG7\Extraction</Filter>
+    </ClCompile>
+    <ClCompile Include="MPEG7_CV\Extraction\GoFGoPColorExtraction.cpp">
+      <Filter>MPEG7\Extraction</Filter>
+    </ClCompile>
+    <ClCompile Include="MPEG7_CV\Extraction\homo_texture_extractor.cpp">
+      <Filter>MPEG7\Extraction</Filter>
+    </ClCompile>
+    <ClCompile Include="MPEG7_CV\Extraction\HomoTextureExtraction.cpp">
+      <Filter>MPEG7\Extraction</Filter>
+    </ClCompile>
+    <ClCompile Include="MPEG7_CV\Extraction\imgutil.c">
+      <Filter>MPEG7\Extraction</Filter>
+    </ClCompile>
+    <ClCompile Include="MPEG7_CV\Extraction\RegionShapeExtraction.cpp">
+      <Filter>MPEG7\Extraction</Filter>
+    </ClCompile>
+    <ClCompile Include="MPEG7_CV\Extraction\ScalableColorExtraction.cpp">
+      <Filter>MPEG7\Extraction</Filter>
+    </ClCompile>
+    <ClCompile Include="emd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cv_mpeg7.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
