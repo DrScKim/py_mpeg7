@@ -1,5 +1,5 @@
 # py_mpeg7
-
+----------------------------------------------------------------------------------------
 
 this is wrapping function to use mpeg7 feature in python and calculate its distance
 
@@ -8,13 +8,13 @@ http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html
 
 
 
-
+----------------------------------------------------------------------------------------
 
 1. Setting
 
 	Additional include directory : {OPENCV_INCLUDE_PATH};{BOOST_LIBRARY_INCLUDE_PATH};{PYTHON27_INCLUDE_PATH}
 	Additional library directory : {OPENCV_LIB_PATH};{BOOST_LIB_INCLUDE_PATH};{PYTHON27_LIB_PATH}
-
+----------------------------------------------------------------------------------------
 2. description
 	Currently Supported Features
 
@@ -66,12 +66,13 @@ http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html
 			}]
 		}
 	}
+----------------------------------------------------------------------------------------
 3. Dependencies
 
-	boost 1.61 : http://www.boost.org/users/history/version_1_61_0.html
-	python 2.7 : https://www.python.org/download/releases/2.7/
-	opencv 2.4.10 : http://opencv.org/downloads.html
-
+	+ boost 1.61 : http://www.boost.org/users/history/version_1_61_0.html
+	+ python 2.7 : https://www.python.org/download/releases/2.7/
+	+ opencv 2.4.10 : http://opencv.org/downloads.html
+----------------------------------------------------------------------------------------
 4. How to use
 	
 	after release copy of file "cv_mpeg7.pyd" located on $(SolutionDir)$(Configuration)\
